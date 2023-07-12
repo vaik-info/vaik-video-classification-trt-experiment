@@ -6,7 +6,7 @@ import tqdm
 import time
 import imageio
 from tqdm import tqdm
-from vaik_video_classification_trt_inference.tflite_model import TrtModel
+from vaik_video_classification_trt_inference.trt_model import TrtModel
 
 def main(skip_frame, input_saved_model_path, input_classes_path, input_video_dir_path, output_json_dir_path):
     os.makedirs(output_json_dir_path, exist_ok=True)
